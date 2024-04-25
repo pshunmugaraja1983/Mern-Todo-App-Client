@@ -15,7 +15,7 @@ const App = () => {
 
   useEffect(() => {
 
-    const GET_URL = `/todos`
+    const GET_URL = `${TODO_API_BASE_URL}/todos`
 
     // Fetch data from the Express server
     axios.get(GET_URL)

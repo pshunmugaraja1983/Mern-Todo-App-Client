@@ -8,7 +8,7 @@ const TodoForm = ({ onAdd }) => {
   const addTodo = async () => {
     try {
 
-      const POST_URL = `/todos`
+      const POST_URL = `${TODO_API_BASE_URL}/todos`
       const response = await axios.post(POST_URL, { task });
       onAdd(response.data);
       setTask('');
